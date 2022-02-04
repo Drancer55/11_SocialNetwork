@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Social Network Practice: Bikerband
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hoy día las redes sociales han marcado un hito en materia de difusión masiva, gracias a su alcance, su interactividad, almacenamiento de archivos, la libertad de expresión, los servicios que se ofrecen, así como la inmediatez relativa de sus posibilidades en responder a la atención de necesidades emergentes de la sociedad actual, desde casi cualquier lugar con cualquier persona que tenga un dispositivo tecnológico de comunicación y una conexión a internet.
 
-## Available Scripts
+El objetivo común de las redes sociales se cumple al permitir participar y comunicarnos mediante el uso de múltiples herramientas tecnológicas disponibles, con grupos específicos de interés, así como la participación al crear, editar, comentar, e incluso borrar contenido que se comparte con la sociedad de los medios. A su vez, gracias a las redes sociales la sociedad de información y conocimiento se enriquece y nos nutre de sus saberes.
 
-In the project directory, you can run:
+Índice:
 
-### `npm start`
+1. Descripción
+2. Definición de usuarios
+3. Criterios de aceptación
+4. Requerimientos técnicos
+5. Diagrama de Flujo
+6. Maquetado
+7. Aprendizajes desarrollados
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 1. Descripción
 
-### `npm test`
+El objetivo general de este proyecto es crear una herramienta tecnológica de difusión masiva que promueva el deporte enfocado en el ciclismo mediante una red social. A fin de brindar las bases de interacción en la web para compartir información sobre eventos ciclistas tal como la organización de rodadas locales, competencias profesionales y rodadas con causa, así como sugerencias sobre salud y bienestar, consejos sobre mecánica básica, lugares visitados con la bicicleta, compartir fotos, videos, memes, enlaces de otras redes y brindar la oportunidad de comentar una opinión al respecto. Aunado a ello, se desarrollan atajos que permitan editar o borrar sus propias publicaciones.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para el logro de este proyecto se construye un Single Page Application (SPA) como Red Social (CRUD) llamada "Bikerband"con capacidad para recibir cualquier número de usuarios y siendo escalable. Se utiliza ReactJS, servicios de autentificación de Firebase y Firestore DB.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 2. Definición de usuarios
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Los usuarios son mayores de 15 años, sin distinción de género, que gusten de hacer ciclismo (en cualquiera de sus disciplinas), ya sea profesional o recreativo.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+La interfaz debe permitir a los visitantes:
 
-### `npm run eject`
+- Acceso:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  - Correo electrónico
+  - Número de teléfono
+  - Autentificación de Google o Facebook
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Ver el Feed de noticias de la Red Social
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  - Se muestra el título, fecha de publicación, Contenido (img y texto), para cada publicación.
+  - Mostrar la lista de todos los usuarios registrados con foto de perfil y nombre
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Publicar
 
-## Learn More
+  - Permitir que el usuario:
+    - Publique contenido de texto y contenido img, sólo si ha ingresado con su usuario
+    - Elimine su propia publicación si lo desea
+    - Edita su propia publicación si lo desea
+    - Sólo el mismo usuario como autor puede editar o eliminar sus propias publicaciones.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 3. Criterios de aceptación
 
-### Code Splitting
+- Interfaz receptiva para tabletas y computadoras de escritorio
+- Sólo ECS6
+- Sólo lógica de componente
+- Cobertura de al menos el 50% de las pruebas unitarias
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 4. Diagrama de Flujo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Diagrama](./src/assets/IMG/Diagrama.jpg)
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 5. Maquetado
 
-### Advanced Configuration
+![Access](./src/assets/IMG/Access.jpg)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 6. Aprendizajes desarrollados
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- npm
+- JSON
+- ASYNC AWAIT
+- Base de datos (DB) Firestore
+- Mi primer CRUD en Firebase con React JS
+- Mi primer proyecto de estructuración de datos (Data Structuring)
+- Import and export components
+- GitHub Branch Modeling> Development > Release
