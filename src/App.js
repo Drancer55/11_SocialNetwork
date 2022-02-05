@@ -7,10 +7,10 @@ import { AuthProvider } from './Context/authContext';
 
 function app() {
   return (
-    <div className='h-screen flex'>
+    <div className='h-screen'>
       <AuthProvider>
         <Routes>
-          <Route path="/" element={<ProtectedRoute><Home /></ProtectedRoute>} />
+          <Route path="/" element={<ProtectedRoute><Home/></ProtectedRoute>} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
         </Routes>
